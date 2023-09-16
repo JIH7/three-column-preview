@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,10 +53,15 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  font-family: "Lexend Deca", sans-serif;
+}
+
 body {
   box-sizing: border-box;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -65,6 +71,98 @@ main {
   flex-direction: column;
   width: 100%;
   min-height: 100%;
+}
+
+section {
+  height: 27.625rem;
+  box-sizing: border-box;
+  padding: 3rem;
+  border: none;
+  outline: none;
+}
+section * + * {
+  margin-block-start: 1.5625rem;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+#sedans button {
+  color: #e38826;
+}
+#sedans button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+#suvs {
+  background-color: #006970;
+}
+#suvs button {
+  color: #006970;
+}
+#suvs button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+#luxury {
+  background-color: #004241;
+}
+#luxury button {
+  color: #004241;
+}
+#luxury button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
+h2 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7490196078);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+button {
+  width: 9.125rem;
+  height: 3rem;
+  border-radius: 1.5625rem;
+  border: 2px solid #f2f2f2;
+  outline: none;
+  background-color: #f2f2f2;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+@media only screen and (min-width: 1080px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+  }
+  section {
+    position: relative;
+    height: 100%;
+  }
+  button {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
