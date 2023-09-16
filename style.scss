@@ -116,14 +116,27 @@ button {
 
 @media only screen and (min-width: 1080px) {
     main {
+        box-sizing: border-box;
         flex-direction: row;
         height: 100vh;
+
+        padding: 18vh 18vw;
     }
 
     section {
         position: relative;
 
         height: 100%;
+    }
+
+    #sedans {
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+
+    #luxury {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
 
     button {
