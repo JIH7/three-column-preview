@@ -83,6 +83,9 @@ section {
 section * + * {
   margin-block-start: 1.5625rem;
 }
+section img + * {
+  margin-block-start: 2.1875rem;
+}
 
 #sedans {
   background-color: #e38826;

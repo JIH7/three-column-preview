@@ -37,6 +37,10 @@ section {
     * + * {
         margin-block-start: 1.5625rem;
     }
+
+    img + * {
+        margin-block-start: 2.1875rem;
+    }
 }
 
 #sedans {
